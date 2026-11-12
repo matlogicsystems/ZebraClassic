@@ -1,0 +1,712 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <style>
+                    body { background: #0f1418; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; overflow-x: auto; }
+                    .outer-container { display: inline-block; min-width: 100%; }
+                    .title-bar { padding: 10px 25px; background: #1e272e; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #3d4e5d; position: sticky; left: 0; z-index: 100; }
+                    .bracket-header-row { display: flex; flex-direction: row; gap: 30px; padding: 15px 20px 5px 20px; }
+                    .header-cell { min-width: 260px; text-align: center; color: #f1c40f; font-weight: bold; font-size: 1.1em; }
+                    .bracket-body { display: flex; flex-direction: row; gap: 30px; padding: 20px; min-height: 100vh; height: max-content; }
+                    .round-col { display: flex; flex-direction: column; justify-content: space-around; min-width: 260px; position: relative; }
+                    .round-12 { justify-content: center !important; gap: 120px; }
+                    .match-card { background: #1e272e; border: 1px solid #3d4e5d; border-radius: 4px; padding: 10px; position: relative; width: 240px; margin: 20px 0; z-index: 10; }
+                    .match-card::before, .match-card::after { content: ""; position: absolute; top: 50%; width: 15px; height: 2px; background: #3d4e5d; }
+                    .match-card::before { left: -16px; }
+                    .match-card::after { right: -16px; }
+                    .v-matrix { position: absolute; width: 2px; background: #3d4e5d; z-index: 1; }
+                    .v-matrix-l { left: -16px; }
+                    .v-matrix-r { right: -16px; }
+                    .no-lines::before, .no-lines::after, .no-lines .v-matrix { display: none !important; }
+                    
+                    .match-title { position: absolute; top: -18px; left: 0; width: 100%; text-align: center; font-size: 0.75em; color: #f1c40f; font-weight: bold; text-transform: uppercase; }
+                    .bout-num { font-size: 0.75em; color: #f1c40f; margin-bottom: 4px; font-weight: bold; }
+                    .pin-label { color: #e74c3c; font-size: 0.7em; font-weight: bold; text-align: right; margin-bottom: -2px; text-transform: uppercase; }
+                    .source-tag { font-size: 0.8em; color: #e74c3c; font-weight: bold; margin-right: 5px; }
+                    .player { display: flex; justify-content: space-between; padding: 2px 0; font-size: 0.95em; align-items: center; }
+                    .winner { color: #2ecc71; font-weight: bold; }
+                    .score { background: #000; padding: 0 6px; border-radius: 3px; min-width: 18px; text-align: center; }
+                </style>
+            </head>
+            <body>
+                <div class="outer-container">
+                    <div class="title-bar">
+                        <a href="MMWL-Eastern-Qualifier-2026.html" style="color:#3498db; text-decoration:none; font-weight:bold;">← BACK</a>
+                        <h2 style="margin:0;">B44 lbs</h2>
+                        <div style="text-align:right;"><div style="color:#2ecc71; font-weight:bold; font-size:0.85em;">MATLOGIC LIVE</div><div style="color:#576574; font-size:0.7em;">11:13 AM</div></div>
+                    </div>
+                    <div class="bracket-header-row"><div class="header-cell">RD 12</div><div class="header-cell">RD 10</div><div class="header-cell">RD 9</div><div class="header-cell">RD 7</div><div class="header-cell">RD 6</div><div class="header-cell">RD 4</div><div class="header-cell">RD 3</div><div class="header-cell">RD 1</div><div class="header-cell">RD 2</div><div class="header-cell">RD 5</div><div class="header-cell">RD 8</div><div class="header-cell">RD 11</div></div>
+                    <div class="bracket-body">
+            <div class="round-col round-12">
+                    
+                    <div class="match-card ">
+                        <div class="match-title">3rd Place Match</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 170</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card no-lines">
+                        <div class="match-title">5th Place Match</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 171</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-162</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-163</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-l" style="top:25.0%; height:50.0%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 162</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-153</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 163</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-152</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 155</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 156</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-l" style="top:12.5%; height:25.0%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 146</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-136</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 147</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-137</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:62.5%; height:25.0%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 148</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-138</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 149</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-139</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 140</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 141</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 142</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 143</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-l" style="top:6.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 124</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-119</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 125</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-118</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:31.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 126</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-117</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 127</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-116</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:56.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 128</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-115</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 129</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-114</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:81.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 130</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-113</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 131</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-112</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-101</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 120</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-102</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-103</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-104</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-105</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-106</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 121</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-107</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-108</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 122</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-109</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span><span class="source-tag">L-110</span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span><span class="source-tag">L-111</span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-l" style="top:3.125%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:3.125%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Lincoln Demers -BAAA</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 101</div>
+                            
+                        </div>
+                        <div class="player "><span>Eli Hamby -WWC</span><span class="score">0</span></div>
+                        <div class="player "><span>Leo Moutran -BJW</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:15.625%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:15.625%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 103</div>
+                            
+                        </div>
+                        <div class="player "><span>CARSON EPLING -GVAA</span><span class="score">0</span></div>
+                        <div class="player "><span>Tshaka Curtis -PAL</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 102</div>
+                            
+                        </div>
+                        <div class="player "><span>Lucas Lane -FCMC</span><span class="score">0</span></div>
+                        <div class="player "><span>Bentley Rill -FSK</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:28.125%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:28.125%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Jace Younker -WWC</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 104</div>
+                            
+                        </div>
+                        <div class="player "><span>Elizabeth Bechtel -BAAA</span><span class="score">0</span></div>
+                        <div class="player "><span>Bryce Potter -BAAA</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:40.625%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:40.625%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 105</div>
+                            
+                        </div>
+                        <div class="player "><span>Owen Zimmerman -Pred</span><span class="score">0</span></div>
+                        <div class="player "><span>Jade Crow -WWC</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Mannix Miller -BAAA</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:53.125%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:53.125%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Tyler Loiodice -BAAA</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 106</div>
+                            
+                        </div>
+                        <div class="player "><span>Rowan Strube -FCMC</span><span class="score">0</span></div>
+                        <div class="player "><span>Kai Fung -MTA</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:65.625%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:65.625%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 107</div>
+                            
+                        </div>
+                        <div class="player "><span>Everett Arnold -War Hawks</span><span class="score">0</span></div>
+                        <div class="player "><span>Liam DeVita -War Hawks</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 108</div>
+                            
+                        </div>
+                        <div class="player "><span>Lucas Bunai -Pred</span><span class="score">0</span></div>
+                        <div class="player "><span>Emerson Swartz -Mat Rats</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:78.125%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:78.125%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 109</div>
+                            
+                        </div>
+                        <div class="player "><span>Lane Miss -3MC</span><span class="score">0</span></div>
+                        <div class="player "><span>Cannon Ross -SYA</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 110</div>
+                            
+                        </div>
+                        <div class="player "><span>RYKER MAXEY -GVAA</span><span class="score">0</span></div>
+                        <div class="player "><span>Everett Hart -BAAA</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-l" style="top:90.625%; height:6.25%;"></div><div class="v-matrix v-matrix-r" style="top:90.625%; height:6.25%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 111</div>
+                            
+                        </div>
+                        <div class="player "><span>Mark Miles -URB</span><span class="score">0</span></div>
+                        <div class="player "><span>Maxton Jacobs -CSYWC</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 0</div>
+                            
+                        </div>
+                        <div class="player "><span>Nico Falzone -PAL</span><span class="score">0</span></div>
+                        <div class="player "><span>Bye</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-r" style="top:6.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 112</div>
+                            
+                        </div>
+                        <div class="player "><span>Lincoln Demers -BAAA</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 113</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-r" style="top:31.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 114</div>
+                            
+                        </div>
+                        <div class="player "><span>Jace Younker -WWC</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 115</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>Mannix Miller -BAAA</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-r" style="top:56.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 116</div>
+                            
+                        </div>
+                        <div class="player "><span>Tyler Loiodice -BAAA</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 117</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-r" style="top:81.25%; height:12.5%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 118</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 119</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>Nico Falzone -PAL</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-r" style="top:12.5%; height:25.0%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 136</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 137</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    <div class="v-matrix v-matrix-r" style="top:62.5%; height:25.0%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 138</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 139</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    <div class="v-matrix v-matrix-r" style="top:25.0%; height:50.0%;"></div>
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 152</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    
+                    
+                    <div class="match-card ">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 153</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div><div class="round-col ">
+                    
+                    <div class="match-card ">
+                        <div class="match-title">1st Place Match</div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                            <div class="bout-num" style="margin-bottom: 0;">BOUT 165</div>
+                            
+                        </div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                        <div class="player "><span>TBD</span><span class="score">0</span></div>
+                    </div>
+                    </div></div></div></body></html>
