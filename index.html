@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatLogic Live | Tournament Portal</title>
+    <style>
+        :root {
+            --primary-green: #27ae60;
+            --accent-yellow: #f1c40f;
+            --dark-bg: #121212;
+            --card-bg: #1e272e;
+            --text-main: #ffffff;
+            --text-dim: #bdc3c7;
+            --primary-black: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+         
+        }
+
+        header {
+            width: 100%;
+            padding: 40px 0;
+            background: linear-gradient(180deg, #1e272e 0%, #121212 100%);
+            text-align: center;
+            border-bottom: 2px solid var(--primary-green);
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: var(--accent-yellow);
+            margin: 10px 0;
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .section-title {
+            color: var(--text-dim);
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .tournament-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .tourney-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #3d4e5d;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tourney-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-green);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .status-badge {
+            background: var(--primary-green);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .status-badgefinal {
+            background: var(--primary-black);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .tourney-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .tourney-date {
+            color: var(--text-dim);
+            font-size: 0.9em;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            color: #555;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Live button code:  <span class="status-badge">LIVE NOW</span> -->
+    
+    <header>
+        <img src="weblogo.png" alt="MatLogic Logo" class="logo">
+        <h1>Tournament Portal</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Active & Recent Events</h2>
+        
+        <div class="tournament-grid">
+
+            <a href="MMWL-Championship-1-2026/MMWL-Championship-1-2026.html" class="tourney-card">
+                <span class="status-badgefinal">FINAL</span>
+                <div class="tourney-name">MMWL Championship - Urbana</div>
+                <div class="tourney-date">Bantam - Intermediate</div>
+                <div class="tourney-date">Mar 8, 2026</div>
+            </a>
+        </div>   
+        <div class="tournament-grid">
+
+            <a href="MMWL-Championship-2-2026/MMWL-Championship-2-2026.html" class="tourney-card">
+                <span class="status-badgefinal">FINAL</span>
+                <div class="tourney-name">MMWL Championship - Urbana</div>
+                <div class="tourney-date">Midget - Junior</div>
+                <div class="tourney-date">Mar 8, 2026</div>
+            </a>
+        </div>   
+        <div class="tournament-grid">
+            
+            <a href="MMWL-Western-Qualifier-1-2026/MMWL-Western-Qualifier-1-2026.html" class="tourney-card">
+                <span class="status-badgefinal">FINAL</span>
+                <div class="tourney-name">MMWL Western Qualifier - Brunswick</div>
+                <div class="tourney-date">Bantam - Intermediate</div>
+                <div class="tourney-date">Mar 1, 2026</div>
+            </a>
+        </div>   
+        <div class="tournament-grid">
+            
+            <a href="MMWL-Western-Qualifier-2-2026/MMWL-Western-Qualifier-2-2026.html" class="tourney-card">
+                <span class="status-badgefinal">FINAL</span>
+                <div class="tourney-name">MMWL Western Qualifier - Brunswick</div>
+                <div class="tourney-date">Midget - Junior</div>
+                <div class="tourney-date">Mar 1, 2026</div>
+            </a>
+        </div>   
+            
+        <div class="tournament-grid">     
+            <a href="MMWL-Eastern-Qualifier-1-2026/MMWL-Eastern-Qualifier-1-2026.html" class="tourney-card">
+                <span class="status-badgefinal">FINAL</span>
+                <div class="tourney-name">MMWL Eastern Qualifier - Boonsboro</div>
+                <div class="tourney-date">Bantam - Intermediate</div>
+                <div class="tourney-date">Mar 1, 2026</div>
+            </a>
+
+            </div>
+        <div class="tournament-grid">     
+            <a href="MMWL-Eastern-Qualifier-2-2026/MMWL-Eastern-Qualifier-2-2026.html" class="tourney-card">
+                <span class="status-badgefinal">FINAL</span>
+                <div class="tourney-name">MMWL Eastern Qualifier - Boonsboro</div>
+                <div class="tourney-date">Midget - Junior</div>
+                <div class="tourney-date">Mar 1, 2026</div>
+            </a>
+
+            </div>
+    </div>
+
+    <footer>
+        &copy; 2026 MatLogic Live Scoring Systems
+    </footer>
+
+</body>
+</html>
